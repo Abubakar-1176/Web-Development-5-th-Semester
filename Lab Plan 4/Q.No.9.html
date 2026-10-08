@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Purchase Order Table</title>
+    <style>
+        table { width: 100%; border-collapse: collapse; border: 3px double blue; font-family: Arial; }
+        th, td { border: 2px solid blue; padding: 8px; text-align: left; }
+        .center { text-align: center; font-weight: bold; }
+        .right { text-align: right; }
+        thead { background-color: #fff; }
+        tfoot { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h3 style="text-align:center;">Advanced HTML tag for Table using thead, tbody and tfoot</h3>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2" class="center">Purchase order: 987654321</th>
+                <th colspan="2" class="center">Tutorialbrain - 10th Oct 2020</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <strong>Vendor:</strong><br>
+                    ABC XYZ ltd.<br>
+                    DUMMY STREET<br>
+                    BUILDING 123<br>
+                    HAZARIBAGH, JHARKHAND, 825301
+                </td>
+                <td colspan="2">
+                    <strong>SHIP TO:</strong><br>
+                    MS DHONI<br>
+                    WILSON GARDEN<br>
+                    SOUTHEAST BLOCK, RANCHI - 834001
+                </td>
+            </tr>
+            <tr class="center">
+                <td>Qty.</td>
+                <td>Item Code.</td>
+                <td>Description</td>
+                <td>Unit Price</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>100</td>
+                <td>IABCDE</td>
+                <td>Pencils</td>
+                <td>20.00</td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>IN877</td>
+                <td>Notebooks</td>
+                <td>100.00</td>
+            </tr>
+            <tr>
+                <td>500</td>
+                <td>IP8675</td>
+                <td>Pens</td>
+                <td>70.00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" class="center">Subtotal</td>
+                <td>190.00</td>
+            </tr>
+            <tr>
+                <td class="center">GST</td>
+                <td>5%</td>
+                <td>9.50</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="center">Grand Total</td>
+                <td>$ 199.50</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
