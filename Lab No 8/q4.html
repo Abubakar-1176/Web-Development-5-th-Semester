@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q4 - Sign in / Sign up</title>
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="bg-white p-6">
+  <div class="mx-auto flex max-w-4xl flex-col items-start justify-center gap-8 md:flex-row">
+
+    
+    <div class="w-full bg-amber-400 p-8 md:w-[340px]">
+      <div class="bg-gray-300 p-3">
+        <form class="rounded bg-white p-5 shadow">
+          <div class="mx-auto mb-5 w-fit border-2 border-dashed border-amber-400 px-3 py-2 text-sm font-semibold uppercase text-amber-400">Your Logo Here</div>
+          <label class="text-xs text-gray-600">First name<span class="text-red-500">*</span></label>
+          <input type="text" class="mb-3 block w-full rounded border border-amber-300 px-2 py-1.5 outline-none">
+          <label class="text-xs text-gray-600">Last name<span class="text-red-500">*</span></label>
+          <input type="text" class="mb-3 block w-full rounded border border-amber-300 px-2 py-1.5 outline-none">
+          <label class="text-xs text-gray-600">Email address<span class="text-red-500">*</span></label>
+          <input type="email" class="mb-3 block w-full rounded border border-amber-300 px-2 py-1.5 outline-none">
+          <label class="text-xs text-gray-600">Password<span class="text-red-500">*</span></label>
+          <input type="password" class="mb-3 block w-full rounded border border-amber-300 px-2 py-1.5 outline-none">
+          <label class="text-xs text-gray-600">Again password<span class="text-red-500">*</span></label>
+          <input type="password" class="mb-4 block w-full rounded border border-amber-300 px-2 py-1.5 outline-none">
+          <div class="flex items-center justify-between">
+            <a href="#" class="text-xs text-amber-400">Have an account</a>
+            <button type="submit" class="rounded bg-amber-400 px-8 py-1.5 text-sm font-semibold text-white">Signup</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Sign in -->
+    <div class="w-full bg-amber-400 p-8 md:w-[370px] md:mt-20">
+      <div class="bg-gray-300 p-3">
+        <form class="rounded bg-white p-5 shadow">
+          <div class="mx-auto mb-5 w-fit border-2 border-dashed border-amber-400 px-3 py-2 text-sm font-semibold uppercase text-amber-400">Your Logo Here</div>
+          <label class="text-xs text-gray-600">Username or email address<span class="text-red-500">*</span></label>
+          <input type="text" class="mb-3 block w-full rounded border border-amber-300 px-2 py-1.5 outline-none">
+          <label class="text-xs text-gray-600">Password<span class="text-red-500">*</span></label>
+          <input type="password" class="mb-4 block w-full rounded border border-amber-300 px-2 py-1.5 outline-none">
+          <div class="flex items-center justify-between">
+            <div class="text-xs leading-5 text-amber-400">
+              <a href="#" class="block">Forgot password?</a>
+              <a href="#" class="block">Create an account</a>
+            </div>
+            <button type="submit" class="rounded bg-amber-400 px-8 py-1.5 text-sm font-semibold text-white">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

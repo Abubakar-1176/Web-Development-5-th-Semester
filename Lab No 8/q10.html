@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q10 - Signup with Validation</title>
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="bg-white p-6">
+  <div class="mx-auto grid max-w-4xl items-center gap-8 bg-blue-500 px-10 py-16 md:grid-cols-2">
+
+    <h1 class="border-l-8 border-white pl-5 text-5xl font-bold leading-tight text-white">Form<br>Validation<br>JavaScript</h1>
+
+    <form id="signupForm" class="rounded-md bg-white p-5 shadow" novalidate>
+      <h2 class="mb-6 text-lg font-medium text-gray-700">Signup</h2>
+
+      <!-- Email -->
+      <input type="email" id="email" placeholder="Email address" class="block w-full rounded border border-gray-300 px-3 py-3 text-xs outline-none">
+      <p id="emailErr" class="mb-3 mt-1 hidden text-[11px] text-red-600">&#9432; Please enter a valid email address</p>
+
+      <!-- Password -->
+      <div class="relative mt-3">
+        <input type="password" id="pass" placeholder="Create password" class="block w-full rounded border border-gray-300 px-3 py-3 text-xs outline-none">
+        <button type="button" onclick="toggle('pass')" class="absolute right-3 top-2.5 text-gray-400">&#128065;</button>
+      </div>
+      <p id="passErr" class="mb-3 mt-1 hidden text-[11px] text-red-600">&#9432; Please enter atleast 8 character with number, symbol, capital and small letter</p>
+
+      <!-- Confirm -->
+      <div class="relative mt-3">
+        <input type="password" id="confirm" placeholder="Confirm password" class="block w-full rounded border border-gray-300 px-3 py-3 text-xs outline-none">
+        <button type="button" onclick="toggle('confirm')" class="absolute right-3 top-2.5 text-gray-400">&#128065;</button>
+      </div>
+      <p id="confirmErr" class="mb-3 mt-1 hidden text-[11px] text-red-600">&#9432; Password don't match.</p>
+
+      <button type="submit" class="mt-4 w-full rounded bg-blue-500 py-3 text-xs text-white">Signup Now</button>
+    </form>
+  </div>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+
+    function toggle(id) {
+      const el = $(id);
+      el.type = el.type === "password" ? "text" : "password";
+    }
+
+    function setState(inputId, errId, ok) {
+      const input = $(inputId), err = $(errId);
+      err.classList.toggle("hidden", ok);
+      input.classList.toggle("border-red-500", !ok);
+      input.classList.toggle("border-gray-300", ok);
+    }
+
+    function validate() {
+      const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test($("email").value);
+      const passOk = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9]).{8,}$/.test($("pass").value);
+      const matchOk = $("confirm").value !== "" && $("confirm").value === $("pass").value;
+      setState("email", "emailErr", emailOk);
+      setState("pass", "passErr", passOk);
+      setState("confirm", "confirmErr", matchOk);
+      return emailOk && passOk && matchOk;
+    }
+
+    $("signupForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (validate()) alert("Signup successful!");
+    });
+
+    ["email", "pass", "confirm"].forEach((id) => $(id).addEventListener("input", validate));
+  </script>
+</body>
+</html>

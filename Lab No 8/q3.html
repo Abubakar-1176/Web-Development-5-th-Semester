@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q3 - Login (Flex)</title>
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="bg-white p-6">
+  <div class="mx-auto flex max-w-5xl flex-col gap-5 md:flex-row">
+    <!-- login card -->
+    <div class="flex flex-1 flex-col rounded-3xl bg-gradient-to-b from-indigo-400 to-indigo-600 p-6 text-white">
+      <h2 class="mb-3 text-center text-2xl font-bold">Log in</h2>
+      <form class="flex flex-1 flex-col">
+        <label class="text-xs text-indigo-100">Username *</label>
+        <input type="text" placeholder="Enter your Username" class="mb-4 mt-1 rounded-full bg-white px-4 py-2 text-xs text-gray-700 outline-none">
+        <label class="text-xs text-indigo-100">Password *</label>
+        <input type="password" placeholder="Enter your Password" class="mb-3 mt-1 rounded-full bg-white px-4 py-2 text-xs text-gray-700 outline-none">
+        <label class="mb-4 flex items-center gap-2 text-xs"><input type="checkbox"> Remember me</label>
+        <button type="submit" class="rounded-full bg-gradient-to-b from-yellow-300 to-yellow-500 py-3 text-sm font-bold text-indigo-700">LOGIN</button>
+
+        <div class="mt-10 flex justify-between text-xs">
+          <a href="#" class="border-b border-white">Forgot password?</a>
+          <a href="#" class="border-b border-white">Don't have an account?</a>
+        </div>
+        <p class="mt-auto pt-10 text-center text-xs">Image from <a href="https://www.freepik.com" class="border-b border-white">Freepik</a></p>
+      </form>
+    </div>
+
+    <!-- image -->
+    <div class="flex-1 overflow-hidden rounded-3xl">
+      <img src="https://picsum.photos/seed/login3/700/800" alt="Login" class="h-full w-full object-cover">
+    </div>
+  </div>
+</body>
+</html>

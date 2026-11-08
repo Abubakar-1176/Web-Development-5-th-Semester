@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q7 - ABC Company</title>
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="bg-white p-6">
+  <div class="mx-auto max-w-4xl bg-rose-500 px-24 py-8 max-md:px-4">
+    <div class="bg-white">
+      <div class="p-4">
+        <img src="https://picsum.photos/seed/building7/1000/400" alt="Building" class="h-60 w-full object-cover">
+      </div>
+
+      <!-- cities -->
+      <nav class="grid grid-cols-2 px-4 pb-3 text-sm font-bold md:grid-cols-4">
+        <a href="#" class="px-4 py-2">Sydney</a>
+        <a href="#" class="px-4 py-2">Melbourne</a>
+        <a href="#" class="px-4 py-2">Los Angeles</a>
+        <a href="#" class="px-4 py-2">London</a>
+      </nav>
+
+      <div class="grid md:grid-cols-2">
+        <!-- form -->
+        <form class="p-8">
+          <h2 class="mb-10 mt-8 text-center text-4xl font-light">Get in Touch</h2>
+          <label class="text-xs">Name</label>
+          <input type="text" placeholder="Enter your Name" class="mb-4 mt-1 block w-full rounded border border-gray-300 bg-gray-200 px-3 py-2 text-xs outline-none">
+          <label class="text-xs">Email</label>
+          <input type="email" placeholder="Enter a valid email address" class="mb-4 mt-1 block w-full rounded border border-gray-300 bg-gray-200 px-3 py-2 text-xs outline-none">
+          <label class="text-xs">How can we help?</label>
+          <textarea rows="4" class="mb-4 mt-1 block w-full rounded border border-gray-300 bg-gray-200 px-3 py-2 text-xs outline-none"></textarea>
+          <button type="submit" class="w-full rounded bg-rose-500 py-2 text-xs font-bold text-white">SUBMIT</button>
+        </form>
+
+        <!-- map -->
+        <div class="min-h-[400px]">
+          <iframe class="h-full min-h-[400px] w-full border-0" loading="lazy"
+            src="https://www.google.com/maps?q=Manhattan,New+York&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

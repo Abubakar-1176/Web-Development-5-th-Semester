@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q2 - Contact Us with Cards</title>
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="bg-white p-6">
+  <div class="mx-auto max-w-4xl">
+    <div class="grid items-center gap-8 md:grid-cols-[1.25fr_1fr]">
+      <img src="https://picsum.photos/seed/contact2/700/700" alt="Contact" class="h-full w-full object-cover">
+      <form class="px-2">
+        <h2 class="mb-6 text-center text-3xl font-light">Contact Us</h2>
+        <label class="text-xs font-semibold">Name</label>
+        <input type="text" placeholder="Enter your Name" class="mb-3 block w-full border-b border-gray-300 py-1 text-xs outline-none">
+        <label class="text-xs font-semibold">Email</label>
+        <input type="email" placeholder="Enter a valid email address" class="mb-3 block w-full border-b border-gray-300 py-1 text-xs outline-none">
+        <label class="text-xs font-semibold">Message</label>
+        <textarea rows="4" class="mb-3 block w-full border-b border-gray-300 text-xs outline-none"></textarea>
+        <label class="mb-4 flex items-center gap-2 text-xs">
+          <input type="checkbox"> I accept the <a href="#" class="text-blue-600">Terms of Service</a>
+        </label>
+        <button type="submit" class="w-full rounded bg-brand-red py-2 text-xs font-bold tracking-wider text-white">SUBMIT</button>
+      </form>
+    </div>
+
+    <div class="mt-6 grid gap-4 md:grid-cols-3">
+      <div class="bg-brand-red p-5 text-white">
+        <h3 class="mb-2 text-sm font-bold">&#9990; CALL US</h3>
+        <p class="text-xs leading-5">1 (234) 567-891,<br>1 (234) 987-654</p>
+      </div>
+      <div class="bg-brand-red p-5 text-white">
+        <h3 class="mb-2 text-sm font-bold">&#9679; LOCATION</h3>
+        <p class="text-xs leading-5">121 Rock Sreet, 21 Avenue, New York, NY 92103-9000</p>
+      </div>
+      <div class="bg-brand-red p-5 text-white">
+        <h3 class="mb-2 text-sm font-bold">&#9719; HOURS</h3>
+        <p class="text-xs leading-5">Mon &ndash; Fri ...... 11 am &ndash; 8 pm, Sat, Sun ...... 6 am &ndash; 8 pm</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

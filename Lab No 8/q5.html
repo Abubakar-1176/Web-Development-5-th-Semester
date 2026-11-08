@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q5 - Contact Us</title>
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="bg-white p-6">
+  <div class="mx-auto flex max-w-4xl flex-col items-center overflow-hidden bg-brand-purple px-6 pt-10 pb-8">
+    
+    <div class="relative -mb-1 h-64 w-72">
+      <div class="absolute -right-24 top-4 h-56 w-56 rounded-[60%_40%_50%_50%] bg-amber-400"></div>
+      <div class="absolute -left-20 top-24 h-40 w-40 rounded-full bg-amber-400"></div>
+      <div class="relative mx-auto h-64 w-64 overflow-hidden rounded-t-full rounded-b-none bg-gray-100">
+        <img src="https://picsum.photos/seed/grad5/500/500" alt="Student" class="h-full w-full object-cover">
+      </div>
+    </div>
+
+    <!-- card -->
+    <div class="grid w-full max-w-xl bg-white md:grid-cols-[1.2fr_1fr]">
+      <form class="p-5">
+        <h2 class="mb-4 text-center text-xl font-bold text-brand-purple">Contact Us</h2>
+        <label class="text-[10px] font-semibold">Name</label>
+        <input type="text" placeholder="Enter your Name" class="mb-3 block w-full border-b border-brand-purple py-1 text-[10px] outline-none">
+        <label class="text-[10px] font-semibold">Email</label>
+        <input type="email" placeholder="Enter a valid email address" class="mb-3 block w-full border-b border-brand-purple py-1 text-[10px] outline-none">
+        <label class="text-[10px] font-semibold">Message</label>
+        <textarea rows="4" class="mb-3 block w-full border-b border-brand-purple text-[10px] outline-none"></textarea>
+        <label class="mb-3 flex items-center gap-1 text-[10px]"><input type="checkbox"> I accept the <a href="#" class="text-orange-300">Terms of Service</a></label>
+        <button type="submit" class="w-full rounded bg-brand-purple py-2 text-[10px] font-bold text-white">SUBMIT</button>
+      </form>
+
+      <div class="space-y-5 bg-gray-100 p-5 text-center text-[11px]">
+        <div>
+          <h3 class="mb-2 text-xs font-bold text-brand-purple">CALL US</h3>
+          <p>1 (234) 567-891<br>1 (234) 987-654</p>
+        </div>
+        <div>
+          <h3 class="mb-2 text-xs font-bold text-brand-purple">LOCATION</h3>
+          <p>121 Rock Sreet, 21 Avenue,<br>New York, NY 92103-9000</p>
+        </div>
+        <div>
+          <h3 class="mb-2 text-xs font-bold text-brand-purple">OUR TOP SERVICES</h3>
+          <p class="font-bold leading-5">Self-Studying<br>Online Courses<br>Challenge Yourself</p>
+        </div>
+        <p>Image from <a href="https://www.freepik.com" class="border-b border-black">Freepik</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
