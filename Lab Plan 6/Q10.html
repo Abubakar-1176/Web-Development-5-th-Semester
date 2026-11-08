@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #eef2f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .contact-container {
+        background-color: #fff;
+        padding: 35px 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        width: 400px;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #555;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    textarea {
+        min-height: 80px;
+        resize: vertical;
+    }
+    input[type="submit"] {
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #28a745;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #218838;
+    }
+    .follow-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    .follow-buttons a {
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        flex: 1;
+        margin: 0 3px;
+        transition: opacity 0.3s;
+    }
+    .follow-buttons a:hover {
+        opacity: 0.8;
+    }
+    .facebook { background-color: #3b5998; }
+    .twitter { background-color: #1da1f2; }
+    .instagram { background-color: #e4405f; }
+    .linkedin { background-color: #0077b5; }
+</style>
+</head>
+<body>
+<div class="contact-container">
+    <h2>Contact Us</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div class="follow-buttons">
+        <a href="https://facebook.com" target="_blank" class="facebook">Facebook</a>
+        <a href="https://twitter.com" target="_blank" class="twitter">Twitter</a>
+        <a href="https://instagram.com" target="_blank" class="instagram">Instagram</a>
+        <a href="https://linkedin.com" target="_blank" class="linkedin">LinkedIn</a>
+    </div>
+</div>
+</body>
+</html>

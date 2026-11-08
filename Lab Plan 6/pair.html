@@ -1,0 +1,13 @@
+
+<!DOCTYPE html>
+<html><style>
+#t { view-transition-name: hero; }
+::view-transition-image-pair(hero) {
+  isolation: isolate;
+}
+</style><body>
+<p id="t">Hello</p>
+<button onclick="document.startViewTransition(()=>{
+t.textContent='Welcome!';
+})">Change</button>
+</body></html>

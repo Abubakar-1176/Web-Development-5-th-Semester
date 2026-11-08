@@ -1,0 +1,8 @@
+:root::view-transition-group(*) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+}
