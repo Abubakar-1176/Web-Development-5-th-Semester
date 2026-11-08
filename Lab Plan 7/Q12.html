@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title> Q12 Login Flex</title><style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;background:#fff}
+.wrap{display:flex;gap:20px;width:90%;max-width:900px;flex-wrap:wrap}
+.login{flex:1;min-width:280px;background:linear-gradient(#7b7fe8,#4350dc);border-radius:25px;padding:30px;color:#fff;display:flex;flex-direction:column}
+.login h2{text-align:center;margin:0 0 15px}label{font-size:13px}
+input[type=text],input[type=password]{width:100%;padding:10px 14px;border:0;border-radius:20px;margin:4px 0 14px}
+button{background:linear-gradient(#ffd93b,#f2c61f);border:0;border-radius:20px;padding:12px;font-weight:bold;color:#3b3fb5;margin:14px 0 30px;cursor:pointer}
+.links{display:flex;justify-content:space-between}.links a{color:#fff;font-size:13px}.credit{text-align:center;font-size:12px;margin-top:25px}
+.img{flex:1;min-width:280px;min-height:420px;border-radius:25px;background:#fdb53a url('man.jpg') center/cover}
+</style></head><body><div class="wrap">
+<form class="login"><h2>Log in</h2>
+<label>Username *</label><input type="text" placeholder="Enter your Username">
+<label>Password *</label><input type="password" placeholder="Enter your Password">
+<label><input type="checkbox"> Remember me</label><button>LOGIN</button>
+<div class="links"><a href="#">Forgot password?</a><a href="#">Don't have an account?</a></div>
+<div class="credit">Image from <a href="https://www.freepik.com" style="color:#fff">Freepik</a></div></form>
+<div class="img"></div></div></body></html>

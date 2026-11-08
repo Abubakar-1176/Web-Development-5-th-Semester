@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Q20 Signup Validation</title><style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#4070f4;display:flex;align-items:center;justify-content:space-around;flex-wrap:wrap;font-family:Arial,sans-serif;padding:20px}
+.title{color:#fff;font-size:48px;font-weight:bold;border-left:6px solid #fff;padding-left:20px;line-height:1.2}
+form{background:#fff;width:340px;padding:25px;border-radius:6px}h2{margin:0 0 20px;font-size:20px}
+.f{margin-bottom:14px}.f input{width:100%;padding:12px;border:1px solid #bbb;border-radius:5px;outline:0}
+.f input:focus{border-color:#4070f4}
+.f small{display:none;color:#d93025;font-size:12px;margin-top:5px}
+/* CSS-only validation: error shows when text is typed and does not match the pattern */
+.f input:not(:placeholder-shown):invalid{border-color:#d93025}
+.f input:not(:placeholder-shown):invalid + small{display:block}
+button{width:100%;background:#4070f4;color:#fff;border:0;padding:12px;border-radius:5px;cursor:pointer}
+</style></head><body>
+<div class="title">Form<br>Validation<br>CSS Only</div>
+<form action="#">
+<h2>Signup</h2>
+<div class="f"><input type="email" placeholder="Email" required pattern="[^@\s]+@[^@\s]+\.[a-zA-Z]{2,}"><small>Please enter a valid email address</small></div>
+<div class="f"><input type="password" placeholder="Create password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}"><small>Please enter at least 8 characters with number, symbol, capital and small letter</small></div>
+<div class="f"><input type="password" placeholder="Confirm password" required><small>Please confirm your password</small></div>
+<button type="submit">Signup Now</button>
+</form>
+</body></html>
